@@ -236,8 +236,8 @@ func update_forces() -> void:
 			torque_vec += rand_torque * Vector3.UP * direction
 
 			# Add off-axis wobbles
-			var rand_roll := rand_range(-0.5, 0.5) * turbulence_factor * thrust * radius
-			var rand_pitch := rand_range(-0.5, 0.5) * turbulence_factor * thrust * radius
+			var rand_roll := rand_range(-0.75, 0.75) * turbulence_factor * thrust * radius
+			var rand_pitch := rand_range(-0.75, 0.75) * turbulence_factor * thrust * radius
 			roll_moment_vec += rand_roll * Vector3.RIGHT * direction
 			pitch_moment_vec += rand_pitch * Vector3.FORWARD
 
